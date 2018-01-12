@@ -1,0 +1,201 @@
+/*------------------------------------------------------------------- /
+
+Theme Name: mushfiq
+Author: "mushfiq"
+Author URI: 
+Description: 
+Version: 1.0
+
+--------------------------------------------------------------------- */
+
+/*---------------------------------------------
+
+
+=========== Table Of Content ===========
+
+
+	
+-----------------------------------------------*/
+
+/*--------------------------------------------------------------------
+				1.General css
+----------------------------------------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #7f7e7e;
+    max-width:1920px;
+    margin:0 auto;
+	position:relative;
+}
+a:focus,
+a:hover,
+a:active,
+a{
+	text-decoration:none;
+	outline:none;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+	font-weight : normal;
+}
+p{margin: 0;line-height: 25px;}
+
+input,select,textarea,button{
+	outline:0;
+}
+html,body{
+    height: 100%;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s 0.3s ease; 
+  -moz-transition: opacity 0.3s 0.3s ease; 
+  -ms-transition: opacity 0.3s 0.3s ease; 
+  -o-transition: opacity 0.3s 0.3s ease; 
+  transition: opacity 0.3s 0.3s ease; 
+  opacity: 0;
+}
+textarea{
+    resize: none;
+}
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+.no-padding{
+	margin: 0 ;
+	padding: 0 ;
+}
+/*====================================================================
+				2.Home Page One
+======================================================================*/
+
+
+#wrapper{
+  position: relative;
+  width:100%;
+  min-height:100vh;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.layer .content-wrap{
+  position: absolute;
+  width:100vw;
+  min-height: 100vh;
+}
+
+.layer .content-body{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: center;
+  transform:translateY(-50%);
+  color:#fff;
+  z-index:3;
+}
+
+.layer img{
+  position: absolute;
+  width:100%;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.bottom{
+  background:#222;
+  z-index:1;
+}
+
+.bottom .content-body{
+  right:2%;
+}
+
+.bottom h1{
+  color:#FDAB00;
+}
+
+.top{
+  background:#eee;
+  color:#222;
+  z-index:2;
+  width:100vh;
+}
+
+.top .content-body{
+  left: 2%;
+  color:#222;
+}
+
+.handle{
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #FDAB00;
+  width:5px;
+  top:0;
+  left: 50%;
+  z-index:3;
+}
+
+.skewed .handle{
+  top:50%;
+  transform:rotate(5deg) translateY(-50%);
+  height: 200%;
+  transform-origin:top;
+}
+
+.skewed .top{
+  transform: skew(-5deg);
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+  transform: skew(5deg);
+  margin-left:1000px;
+}
+
+@media(max-width:768px){
+  body{
+    font-size:75%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
